@@ -1,0 +1,11 @@
+{
+    "api_version": "5.131",
+    "post_per_time": 100,
+    "access_token": "Get your own token for vk.com on this site: https://vkhost.github.io/"
+    "domains": [],
+    "post_number": 0,
+    "post_filter": {
+        "restricted_words": [],
+        "contains_words": []
+    }
+}
