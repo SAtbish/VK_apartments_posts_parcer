@@ -1,7 +1,7 @@
 from vk_api import VkApiError, VkApi
 
 
-def get_max_offset(api: VkApi, domain: str, posts_per_time: int) -> int:
+def get_posts_count(api: VkApi, domain: str, posts_per_time: int) -> int:
     try:
         return api.method(
             method="wall.get",

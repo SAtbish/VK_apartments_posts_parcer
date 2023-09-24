@@ -9,6 +9,7 @@ packages = [{include = "vk_apartments_posts_parcer"}]
 [tool.poetry.dependencies]
 python = "3.11.1"
 pandas = "^2.1.1"
+vk-api = "^11.9.9"
 
 
 [build-system]
