@@ -1,4 +1,4 @@
-from parse_wall_data import parse_wall_data
+from .parse_wall_data import parse_wall_data
 from vk_api import VkApi
 
 

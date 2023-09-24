@@ -1,7 +1,7 @@
 import datetime
 
 from vk_api import VkApi
-from filter_post_data import filter_post_data
+from .filter_post_data import filter_post_data
 from utils import find_apartment_cost
 
 
