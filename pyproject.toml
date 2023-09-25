@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "vk-apartments-posts-parcer"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "This repository can help you to parce apartments posts from VK"
 authors = ["Алексей Шумов <lehashumov3525@gmail.com>"]
 readme = "README.md"
 packages = [{include = "vk_apartments_posts_parcer"}]
 
 [tool.poetry.dependencies]
-python = "3.11.1"
+python = ">=3.11, <3.13"
 pandas = "^2.1.1"
 vk-api = "^11.9.9"
 
