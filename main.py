@@ -23,7 +23,6 @@ def main():
 
     api = VkApi(token=ACCESS_TOKEN, api_version=API_VERSION)
     for domain in DOMAINS:
-        print("domain =",domain)
         max_offset = get_posts_count(api, domain, POST_PER_TIME)
 
         if not POST_NUMBER:
@@ -52,6 +51,7 @@ def main():
         count_of_losses = count_of_nan_money + count_of_duplicates + count_of_blowouts
 
         print(
+            f"Domain = {domain}\n",
             f"Count of all {domain!r} posts: {max_offset}\n",
             f"Count of apartments posts: {initial_len}\n",
             f"Percent of apartments to all posts: {str((initial_len / max_offset) * 100)[:5]}%\n",
