@@ -3,11 +3,22 @@ from typing import Any
 
 
 def filter_post_data(
-        post_data: dict[str | Any],
+        post_text: str,
         patterns: list[str],
         restricted_words: list[str]
 ) -> bool:
-    post_text = post_data["text"]
+    """
+    Отбирает только валидные посты - содержат текст, не содержат
+    недопустимых строк и содержат слова для поиска
+
+    Args:
+        post_text (str): текст поста
+        patterns (list[str]): слова для поиска в посте
+        restricted_words (list[str]): недопустимые слова в посте
+
+    Returns:
+        bool: результат проверки поста на валидность
+    """
     return all(
         (
             post_text,

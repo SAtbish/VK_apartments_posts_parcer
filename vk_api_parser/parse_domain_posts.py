@@ -11,6 +11,26 @@ def parse_domain_posts(
         restricted_words: list[str],
         domain: str
 ) -> list[list[float, int, int, str]]:
+    """
+    Парсит определённое количество постов - posts_count
+    необходимого источника
+
+    Args:
+        posts_count (int): количество постов, которых
+        нужно распарсить
+        posts_per_time (int): количество постов, которое
+        должно просматриваться за одно обращение к API
+        max_offset (int): количество всех постов источника
+        api (VkApi): апи ВК
+        patterns (list[str]): слова для поиска в посте
+        restricted_words (list[str]): недопустимые слова в посте
+        domain (str): имя источника постов
+
+    Returns:
+        list[list[float, int, int, str]]: список записей вида:
+        `цена аренды квартиры`, `год публикации поста`,
+        `месяц публикации поста`, `текст поста в одну строку`
+    """    
     post_offset = 1
     all_posts = []
 
