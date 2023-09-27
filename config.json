@@ -1,0 +1,19 @@
+{
+    "api_version": "5.131",
+    "post_per_time": 100,
+    "access_token": "Get your own token for vk.com on this site: https://vkhost.github.io/",
+    "domains": ["lovebmstu", "overheartspu", "baumanka_official", "overhearmtuci", "hse_overheard", "overhearmifi"],
+    "post_number": 0,
+    "post_filter": {
+        "restricted_words": [],
+        "contains_words": [
+            "кварт",
+            "двушк",
+            "трёшк",
+            "трешк",
+            "2шк",
+            "3шк",
+            "однуш"
+        ]
+    }
+}
